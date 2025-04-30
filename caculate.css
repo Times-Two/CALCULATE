@@ -1,0 +1,90 @@
+/* Body and Calculator */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 90%); /* Light background */
+    transition: background-color 0.5s ease;
+}
+
+/* Calculator Style */
+#calculator {
+    width: 320px; /* Fixed width for a standard size */
+    height: 400px; /* Fixed height */
+    margin: 50px auto;
+    padding: 20px;
+}
+
+#display {
+    width: 95%;
+    height: 50px;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; /* Ensure proper spacing */
+    align-items: center; /* Center buttons vertically */
+}
+
+button {
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    /* border-radius: 5px; */
+    background: #ddd;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #ccc;
+}
+
+button:active {
+    background-color: #bbb; /* Button active state */
+}
+
+/* Operator Buttons */
+.operation-btn {
+    background: orange;
+    color: white;
+}
+
+.operation-btnn {
+    background: red;
+    color: white;
+}
+
+/* Style second special button (DEL) differently */
+.operation-btnn:nth-of-type(2) {
+    background: darkred;
+    color: white;
+}
+
+/* Equal (=) button style */
+.calculate {
+    background: green;
+    color: white;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width:600px) {
+    #calculator {
+        max-width: 95%;
+    }
+    button {
+        height: 60px;
+        font-size: 1.5rem;
+    }
+    #display {
+        font-size: 2.5rem;
+        width: 95%;
+    }
+}
