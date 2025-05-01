@@ -9,6 +9,105 @@ body {
     transition: background-color 0.5s ease;
 }
 
+/* Profile icon and dropdown menu */
+#profile-container {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 1000;
+}
+
+#profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #0a74da;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+#dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 10px;
+    width: 160px;
+}
+
+#dropdown-menu a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px;
+}
+
+#dropdown-menu a:hover {
+    background-color: #f0f0f0;
+}
+
+/* History Panel */
+#history-panel {
+    position: absolute;
+    top: 70px;
+    right: 15px;
+    width: 220px;
+    max-height: 300px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow-y: auto;
+    display: none;
+    z-index: 999;
+    padding: 10px;
+}
+
+#history-panel.dark {
+    background-color: #1e1e1e;
+    color: white;
+    border: 1px solid #555;
+}
+
+#history-panel h3 {
+    margin-top: 0;
+    font-size: 16px;
+}
+
+#history-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#history-list li {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+/* Dark theme */
+body.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-theme #calculator {
+    background-color: #1e1e1e;
+}
+
+body.dark-theme button {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+
 /* Calculator Style */
 #calculator {
     width: 320px; /* Fixed width for a standard size */

@@ -3,18 +3,18 @@
     "short_name": "Calculator",
     "start_url": "./index.html",
     "display": "standalone",
-    // "background_color": "#ffffff",
-    // "theme_color": "#0a74da",
+    "background_color": "#ffffff",
+    "theme_color": "#0a74da",
     "icons": [
       {
         "src": "theo.png",
         "sizes": "400x400",
-        "type": "image/png" 
+        "type": "image/png"
       },
       {
-        // "src": "theo.png",
-        // "sizes": "512x512",
-        // "type": "image/png"
+        "src": "theo.png",
+        "sizes": "512x512",
+        "type": "image/png"
       }
     ]
   }
