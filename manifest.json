@@ -3,8 +3,8 @@
     "short_name": "Calculator",
     "start_url": "./index.html",
     "display": "standalone",
-    "background_color": "#ffffff",
-    "theme_color": "#0a74da",
+    // "background_color": "#ffffff",
+    // "theme_color": "#0a74da",
     "icons": [
       {
         "src": "theo.png",
