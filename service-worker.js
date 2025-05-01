@@ -7,8 +7,8 @@ self.addEventListener("install", (e) => {
           "./style.css",    // Update if your CSS file has a different name
           "./script.js",    // Update if your JS file has a different name
           "./manifest.json",
-          "./icon-192.png",
-          "./icon-512.png"
+          "./theo.png",
+          "./theo.png"
         ]);
       })
     );
