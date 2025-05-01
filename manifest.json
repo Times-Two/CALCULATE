@@ -9,12 +9,12 @@
       {
         "src": "theo.png",
         "sizes": "400x400",
-        "type": "image/png"
+        "type": "image/png" 
       },
       {
-        "src": "theo.png",
-        "sizes": "512x512",
-        "type": "image/png"
+        // "src": "theo.png",
+        // "sizes": "512x512",
+        // "type": "image/png"
       }
     ]
   }
